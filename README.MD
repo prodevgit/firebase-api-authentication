@@ -4,6 +4,7 @@ Frontend:
 
 Authenticate an user and store the uid and idtoken given by the firebase authentication api
 
+{
 var user;
 var appVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container', {
       'size': 'invisible',
@@ -31,6 +32,7 @@ firebase.auth().signInWithPhoneNumber('+91'+phoneNumber, appVerifier).then(funct
 }).catch(function (error) {
     console.log(error);
 });
+}
 
 The API call createUser(uid,idToken) is given an idtoken and a firebase uid as header and sent to backend
 
