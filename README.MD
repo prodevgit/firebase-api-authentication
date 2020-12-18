@@ -57,6 +57,7 @@ we use a decorator function to authenticate the user
           return decorated
 
 Replace firebase-admin-sdk-service.json with your project config.
+
       {
         "type": "service_account",
         "project_id": "x-xxxxx-xxxxx",
